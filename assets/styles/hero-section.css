@@ -1,0 +1,151 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    /* Full screen height */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ---------- TOP HALF ---------- */
+.hero-top {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 60vh;
+    /* Top half */
+    gap: 10px;
+    padding: 10px;
+}
+
+.hero-left,
+.hero-right {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    /* box-shadow: 0 6px 18px var(--shadow-primary); */
+}
+
+.hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Controls */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px var(--shadow-primary);
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+.prev:hover,
+.next:hover {
+    background: var(--hover-primary);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* ---------- BOTTOM HALF ---------- */
+.hero-bottom {
+    display: flex;
+    height: 30vh;
+    /* Bottom half */
+    padding: 0 10px;
+    /* horizontal padding */
+    gap: 10px;
+    box-sizing: border-box;
+    /* include padding in width */
+    overflow: hidden;
+    /* prevent overflow */
+}
+
+.hero-bottom img {
+    flex: 1 1 0;
+    /* flex-grow, flex-shrink, flex-basis */
+    width: 0;
+    /* required with flex-basis 0 to share space equally */
+    border-radius: 12px;
+    object-fit: cover;
+    height: 100%;
+    /* fill 50vh */
+    box-shadow: 0 6px 14px var(--shadow-accent);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* .hero-bottom img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px var(--shadow-primary);
+} */
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+    .hero {
+        height: auto;
+    }
+
+    .hero-top {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .hero-right {
+        display: none;
+        /* hide static image on small screens */
+    }
+
+    .hero-bottom {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-bottom img {
+        height: 200px;
+    }
+}
