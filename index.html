@@ -7,6 +7,7 @@
     <title>Responsive Mega Menu with Common.css</title>
     <link rel="stylesheet" href="assets/styles/common.css">
     <link rel="stylesheet" href="assets/styles/navbar.css">
+    <link rel="stylesheet" href="assets/styles/hero-section.css">
 </head>
 
 <body>
@@ -72,10 +73,45 @@
         </div>
     </nav>
 
-    <!-- Content for scroll demo -->
-    <div class="content"></div>
+    <section class="hero">
+        <!-- Top Half -->
+        <div class="hero-top">
+            <div class="hero-left">
+                <!-- Slider -->
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide active">
+                            <img src="https://picsum.photos/1200/600?random=1" alt="Slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="https://picsum.photos/1200/600?random=2" alt="Slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3">
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <img src="https://picsum.photos/600/600?random=10" alt="Static Hero">
+            </div>
+        </div>
+
+        <!-- Bottom Half -->
+        <div class="hero-bottom">
+            <img src="https://picsum.photos/600/300?random=11" alt="Thumb 1">
+            <img src="https://picsum.photos/600/300?random=12" alt="Thumb 2">
+            <img src="https://picsum.photos/600/300?random=13" alt="Thumb 3">
+        </div>
+    </section>
+
 
     <script src="assets/scripts/navbar.js"></script>
+    <script src="assets/scripts/hero-section.js"></script>
 
 </body>
 
