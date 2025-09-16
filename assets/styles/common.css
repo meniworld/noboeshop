@@ -1,0 +1,130 @@
+:root {
+    /* Brand Colors */
+    --ivory: #FEFFF5;
+    --linen: #F7E8DC;
+    --french-blue: #0676D0;
+    --gunmetal: #313945;
+    --eerie-black: #262524;
+    --pumpkin: #FF7100;
+
+    /* Basic Colors */
+    --white: #ffffff;
+    --black: #000000;
+
+    /* Themed Roles */
+    --primary: var(--french-blue);
+    --secondary: var(--linen);
+    --accent: var(--pumpkin);
+
+    /* Semantic Roles */
+    --success: #28a745;
+    --warning: #ffc107;
+    --error: #dc3545;
+
+    /* Hover Colors (Defined via hex or slightly darker tones) */
+    --hover-primary: #055ba8;
+    --hover-secondary: #e4d3c5;
+    --hover-accent: #b15408;
+    --hover-success: #006400;
+    --hover-warning: #cc5a00;
+    --hover-error: #cc3700;
+
+    /* Shadow Colors */
+    --shadow-primary: #0676D04d;
+    --shadow-secondary: #F7E8DC4d;
+    --shadow-accent: #ff7300b7;
+    --shadow-success: #0080004d;
+    --shadow-warning: #FF71004d;
+    --shadow-error: #FF45004d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+/* Primary */
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: 0 4px 10px var(--shadow-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-primary);
+}
+
+/* Secondary */
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--black);
+    box-shadow: 0 4px 10px var(--shadow-secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--hover-secondary);
+}
+
+/* Accent */
+.btn-accent {
+    background-color: var(--accent);
+    color: var(--white);
+    box-shadow: 0 4px 10px var(--shadow-accent);
+}
+
+.btn-secondary:hover {
+    background-color: var(--hover-accent);
+}
+
+/* Success */
+.btn-success {
+    background-color: var(--success);
+    color: var(--white);
+    box-shadow: 0 4px 10px var(--shadow-success);
+}
+
+.btn-success:hover {
+    background-color: var(--hover-success);
+}
+
+/* Warning */
+.btn-warning {
+    background-color: var(--warning);
+    color: var(--black);
+    box-shadow: 0 4px 10px var(--shadow-warning);
+}
+
+.btn-warning:hover {
+    background-color: var(--hover-warning);
+}
+
+/* Error */
+.btn-error {
+    background-color: var(--error);
+    color: var(--white);
+    box-shadow: 0 4px 10px var(--shadow-error);
+}
+
+.btn-error:hover {
+    background-color: var(--hover-error);
+}
+
+.main-content {
+    margin: 120px 0;
+}
