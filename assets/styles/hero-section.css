@@ -119,11 +119,6 @@
 }
 
 
-/* .hero-bottom img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 18px var(--shadow-primary);
-} */
-
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 992px) {
     .hero {
