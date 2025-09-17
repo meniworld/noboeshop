@@ -1,9 +1,9 @@
 .hero {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    /* height: 80vh; */
     /* Full screen height */
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@
 .hero-top {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    height: 60vh;
+    height: 70vh;
     /* Top half */
     gap: 10px;
     padding: 10px;
@@ -94,7 +94,7 @@
 /* ---------- BOTTOM HALF ---------- */
 .hero-bottom {
     display: flex;
-    height: 30vh;
+    height: 40vh;
     /* Bottom half */
     padding: 0 10px;
     /* horizontal padding */
